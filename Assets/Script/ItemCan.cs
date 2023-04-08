@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class ItemCan : MonoBehaviour
 {
-  
+    public float rotateSpeed;
+    
     void Update()
     {
-        transform.Rotate(0,0,0.5f);
+        transform.Rotate(Vector3.up*rotateSpeed*Time.deltaTime,Space.World);
     }
+
+    
 }
